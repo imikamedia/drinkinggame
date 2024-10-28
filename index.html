@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drinking Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Who's getting drunk tonight?</h1>
+    
+    <div id="playerSetup">
+        <input type="text" id="playerName" placeholder="Enter player name">
+        <button onclick="addPlayer()">Add Player</button>
+        <p>Players: <span id="playerList">None</span></p>
+    </div>
+
+    <div id="game">
+        <button onclick="startGame()">Start Game</button>
+        <div id="flashingNames">Waiting for players...</div>
+    </div>
+
+    <div id="questionSection">
+        <p id="questionText"></p>
+        <div id="choices"></div>
+    </div>
+
+    <div id="result">
+        <div class="name" id="resultName"></div>
+        <div id="resultMessage"></div>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
